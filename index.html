@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRO - Tactical Rift Online</title>
+<link id="favicon" rel="icon" href="img/tro.png"/>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="loadingScreen">
+    <div class="rift-loader"></div>
+</div>
+<header>
+    <div class="logo">TRO</div>
+    <nav>
+        <a href="#description">About</a>
+        <a href="#worlds">Worlds</a>
+        <a href="#modes">Modes</a>
+        <a href="#tournaments">Tournaments</a>
+        <a href="#news">News</a>
+        <a href="#media">Media</a>
+        <a href="#social">Community</a>
+    </nav>
+</header>
+<section class="hero">
+    <h1>Tactical Rift Online</h1>
+    <p>In 2147, the world experienced an event called the Rift. During experiments with quantum portals by Eclipse Dynamics, reality cracked. Rifts appeared — unstable spatial breakthroughs that connected dozens of alternative worlds.</p>
+    <div>
+        <button>Play Now</button>
+        <button id="trailerBtn">Watch Trailer</button>
+    </div>
+</section>
+<div id="trailerModal" class="modal">
+    <div style="background:#111;padding:20px;border-radius:10px;max-width:800px;width:90%;position:relative;">
+        <button id="closeTrailer" style="position:absolute;right:10px;top:10px;">❌</button>
+
+        <iframe id="trailerVideo"
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/watch?v=LZQumHRpsog"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+<section id="description" class="description">
+    <h2>About TRO</h2>
+    <div style="margin-top:20px;padding:15px;background:#111;border-radius:10px;display:inline-block;">
+        <h3>🔥 Live Players Online:</h3>
+        <p id="playerCounter" style="font-size:32px;font-family:Orbitron;">Loading...</p>
+    </div>
+    <h3>🌌 TRO Universe — Tactical Rift Online</h3>
+    <h4>-🔻- The Rift Era -🔻-</h4>
+    <p>post-apocalyptic lands</p><p>worlds of the future with robotic armies</p><p>desert planets of alien races</p><p>cyberpunk urban metropolises</p><p>destroyed space stations</p>
+    <p>Each Rift lives by its own laws of physics, time, and even predatory life forms.</p>
+    <h4>-🔻- The Virtual Front -🔻-</h4>
+    <p>After the Rift, the real world became too dangerous, so humanity created Tactical Rift Online — a global network simulation that copies all rift zones. Originally a military training system… but it quickly evolved into an arena for mercenaries, corporations, and digital warriors.</p>
+    <p>Players are called Raiders, specialists who:</p>
+    <p>carry out dangerous missions in Rift zones</p>
+    <p>receive corporate rewards</p>
+    <p>fight for control of key points</p>
+    <p>compete with each other in real and virtual space</p>
+    <p>True veterans train in TRO before going into the real Rifts.</p>
+    <h4>-🔻- Corporations and Factions -🔻-</h4>
+    <p>The world of TRO is dominated by four key forces:</p>
+    <p>⚡ Eclipse Dynamics - The Inventors of the Rift. Control the most powerful energy rifts. The game features advanced technological cannons, tactical drones, and trajectory-bending weapons.</p>
+    <p>🛡 Helion Guard - A paramilitary organization that maintains order. They promote realism, heavy armor, and real-world weapons.</p>
+    <p>🔥 DarkStream Legion - Mercenaries from the future, trading in information and chaos. Using energy blades, infected weapons and hybrid cybermods.</p>
+    <p>👁 Riftborn - A mysterious group that arrived through one of the rift portals. Half-human, half-energy creatures. They have weapons based on explosive matter.</p>
+    <h4>-🔻- TRO game modes -🔻-</h4>
+    <p>💥 Rift War (large-scale 50v50 battles)</p>
+    <p>Giant maps that constantly change due to the instability of the Rifts.</p>
+    <p>🔍 Extraction Ops</p>
+    <p>Raiders penetrate the zone, find resources and try to evacuate.</p>
+    <p>🎯 Hunter Protocol</p>
+    <p>One raider becomes a "Rift Mentor" with superpowers, the others hunt him.</p>
+    <p>⚔ Sector Control</p>
+    <p>Fight for key points that sometimes disappear and appear in new places due to phase shifts.</p>
+    <h4>-🔻- Rift Weapons -🔻-</h4>
+    <p>Variable rift-energy weapons that change functions depending on the zone.</p>
+    <h4>-🔻- Characters and classes -🔻-</h4>
+    <p>Assault - Balance, mobility, dynamic combat.</p>
+    <p>Riftmage - Master of Rifts, creates portals and phase traps.</p>
+    <p>Enforcer - Tank specialist, power armor and shields.</p>
+    <p>Shadowline - Stealth, cyber-masts, cloning, infiltration.</p>
+    <p>Gunner - Heavy weapons, miniguns, turrets, grenade launchers.</p>
+</section>
+<section id="worlds">
+    <h2>Worlds</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://i.ibb.co/mv0Rk5V/desert.jpg">
+            <h3>Desert Wasteland</h3>
+            <p>Survive the harsh desert and fight for resources.</p>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/0j0yL0h/abandoned-city.jpg">
+            <h3>Abandoned City</h3>
+            <p>Explore ruins and uncover hidden secrets.</p>
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/mvM8rV7/lab.jpg">
+            <h3>Secret Laboratory</h3>
+            <p>Dangerous experiments and rogue AI await.</p>
+        </div>
+    </div>
+</section>
+<section id="modes">
+    <h2>Modes</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>PvP</h3>
+            <p>Compete with other players for dominance.</p>
+        </div>
+        <div class="card">
+            <h3>PvE</h3>
+            <p>Fight against AI enemies and bosses.</p>
+        </div>
+        <div class="card">
+            <h3>Battle Royale</h3>
+            <p>Last player standing wins in intense arenas.</p>
+        </div>
+    </div>
+</section>
+<section id="tournaments">
+    <h2>Tournaments</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Global Cup</h3>
+            <p>Next match:</p>
+            <div id="timer1" class="timer"></div>
+            <button>Register</button>
+        </div>
+        <div class="card">
+            <h3>Weekly Showdown</h3>
+            <p>Every Friday 20:00 UTC</p>
+            <button>Join Now</button>
+        </div>
+    </div>
+</section>
+<section id="news" class="news">
+    <h2>Latest News</h2>
+    <div class="item">
+        <h3>New Map Released!</h3>
+        <p>Hidden paths and AI enemies added.</p>
+    </div>
+    <div class="item">
+        <h3>Winter Tournament</h3>
+        <p>Win exclusive skins!</p>
+    </div>
+</section>
+<section id="media">
+    <h2>Media</h2>
+    <div class="gallery">
+        <img src="img/TROB.png">
+        <img src="https://i.ibb.co/2W6bYyF/screenshot2.jpg">
+        <img src="https://i.ibb.co/WFzydhn/screenshot3.jpg">
+    </div>
+</section>
+<section id="social" class="social">
+    <h2>Community</h2>
+    <a href="#">🐦 Twitter</a>
+    <a href="#">📘 Facebook</a>
+    <a href="#">🎮 Discord</a>
+</section>
+<footer>
+    <p>&copy; 2025 Tactical Rift Online | All Rights Reserved</p>
+</footer>
+<script>
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        const ls = document.getElementById("loadingScreen");
+        ls.style.opacity = "0";
+        setTimeout(() => ls.remove(), 600);
+    }, 800);
+});
+document.getElementById("trailerBtn").onclick = () =>
+    document.getElementById("trailerModal").style.display = "flex";
+
+document.getElementById("closeTrailer").onclick = () =>
+    document.getElementById("trailerModal").style.display = "none";
+let mode = "dark";
+
+const PHOTON_APP_ID = "3deabae8-5b9a-4206-8d27-c2de94c3cc4f";
+const REGION = "eu";
+
+async function updatePlayerCounter() {
+    try {
+        const res = await fetch(`https://${REGION}.fusion.photonengine.io/apps/${PHOTON_APP_ID}/stats`);
+        const data = await res.json();
+        document.getElementById("playerCounter").innerText = data.players;
+    }
+    catch {
+        document.getElementById("playerCounter").innerText = "Offline";
+    }
+}
+
+const riftContainer = document.createElement('div');
+riftContainer.style.position = 'absolute';
+riftContainer.style.top = 0;
+riftContainer.style.left = 0;
+riftContainer.style.width = '100%';
+riftContainer.style.height = '100%';
+riftContainer.style.pointerEvents = 'none';
+document.body.appendChild(riftContainer);
+
+const numParticles = 50;
+const particles = [];
+for(let i=0;i<numParticles;i++){
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    particle.style.width = particle.style.height = Math.random()*6+2+'px';
+    particle.style.left = Math.random()*window.innerWidth+'px';
+    particle.style.top = Math.random()*window.innerHeight+'px';
+    particle.style.animationDuration = (5 + Math.random()*5) + 's';
+    document.body.appendChild(particle);
+    particles.push(particle);
+}
+document.addEventListener('mousemove', e=>{
+    const x = e.clientX / window.innerWidth - 0.5;
+    const y = e.clientY / window.innerHeight - 0.5;
+    particles.forEach((p,i)=>{
+        p.style.transform = `translate(${x*30}px, ${y*30}px)`;
+    });
+});
+
+setInterval(updatePlayerCounter, 5000);
+updatePlayerCounter();
+function countdown(id, endDate) {
+    const timer = document.getElementById(id);
+    function update() {
+        const now = new Date().getTime();
+        const distance = endDate - now;
+        if (distance < 0) { timer.innerHTML = "Tournament Started!"; clearInterval(interval); return; }
+        const days = Math.floor(distance / (1000*60*60*24));
+        const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+        const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+        const seconds = Math.floor((distance % (1000*60)) / 1000);
+        timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+    update();
+    const interval = setInterval(update, 1000);
+}
+const tournamentDate = new Date("December 10, 2025 12:00:00").getTime();
+countdown("timer1", tournamentDate);
+
+setInterval(() => {
+    const pulse = document.createElement('div');
+    pulse.className = 'rift-pulse';
+    const size = Math.random()*100+50;
+    pulse.style.width = pulse.style.height = size + 'px';
+    pulse.style.left = Math.random()*window.innerWidth + 'px';
+    pulse.style.top = Math.random()*window.innerHeight + 'px';
+    pulse.style.animationDuration = (2 + Math.random()*2) + 's';
+    riftContainer.appendChild(pulse);
+    setTimeout(() => pulse.remove(), 4000);
+}, 400);
+</script>
+</body>
+</html>
