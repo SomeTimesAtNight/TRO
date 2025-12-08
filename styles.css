@@ -33,7 +33,7 @@ nav a:hover {
 }
 .hero {
     height: 90vh;
-    background: url('img/TROS.png') center/cover no-repeat fixed;
+    background: url('IMG/TROS.png') center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -285,4 +285,5 @@ body.light {
     0% { transform: scale(0); opacity: 0.7; }
     50% { transform: scale(1.5); opacity: 0.3; }
     100% { transform: scale(0); opacity: 0; }
+
 }
